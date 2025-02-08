@@ -1,4 +1,10 @@
-/* Center the video feed properly */
+/* Scanner Layout */
+.scanner-container {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Video Container */
 .scanner-video-wrapper {
     width: 100%;
     max-width: 480px;
@@ -8,15 +14,63 @@
     border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 16 / 9;
-    /* Ensures correct aspect ratio */
 }
 
-/* Ensure video matches parent container without black space */
+/* Video Feed */
 .scanner-video video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Removes black bars */
     border: 2px solid blue;
     display: block;
+}
+
+/* Scanned Result */
+.scanner-result {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: green;
+}
+
+/* Food Information Styling */
+.food-info {
+    display: block !important;
+    /* 🔥 Ensure it's always visible */
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Debugging: Show API response */
+.debug-data {
+    background: #f4f4f4;
+    padding: 10px;
+    font-size: 0.9em;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* No Data Found */
+.no-data {
+    font-size: 1.1em;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Force visibility of food info */
+.food-info {
+    display: block !important;
+    /* 🔥 Ensure it's always visible */
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
 }
