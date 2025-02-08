@@ -10,7 +10,7 @@ import "./index.css"; // Import global styles
 function App() {
     const [showScanner, setShowScanner] = useState(false);
     const [scannedCode, setScannedCode] = useState("");
-    const [foodData, setFoodData] = useState(null); // 👈 Store food info globally
+    const [foodData, setFoodData] = useState(null); // Store food info globally
 
     return (
         <div className="app-container">
@@ -32,7 +32,7 @@ function App() {
                         <BarcodeScanner
                             onScan={(code, data) => {
                                 setScannedCode(code);
-                                setFoodData(data); // 👈 Store food data in App.js
+                                setFoodData(data); // Store food data in App.js
                                 setShowScanner(false); // Close modal after scanning
                             }}
                         />
