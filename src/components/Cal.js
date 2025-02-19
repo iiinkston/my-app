@@ -63,7 +63,191 @@ const MET = {
     Dancing: {
         intensities: null,
         metValue: 6.23
+    },
+
+    Batminton: {
+        intensities: {
+            'General': 5.5,
+            'Competitive': 8
+        }
+    },
+
+    Basketball: {
+        intensities: {
+            'Game': 8,
+            'General': 6.75,
+            'Practice, drills': 9.3,
+            'Shooting baskets': 5
+        }
+    },
+
+    Bowling: {
+        intensities: null,
+        metValue: 3.4
+    },
+
+    Boxing: {
+        intensities: {
+            'Sparring': 7.8,
+            'Punching bag': 8.025,
+        }
+    },
+
+    Cheerleading: {
+        "Cheerleading, gymnastic moves, competitive": 6.0
+    },
+
+    Coaching: {
+        "football, soccer, basketball, baseball, swimming, etc.": 4.0,
+        'Playing with Players Actively': 8
+    },
+
+    Cricket: {
+        intensities: null,
+        metValue: 4.8
+    },
+
+    Curling: {
+        intensities: null,
+        metValue: 4
+    },
+
+    Fencing: {
+        intensities: {
+            'General': 6,
+            'Competitive': 9.8
+        }
+    },
+
+    Floorball: {
+        intensities: null,
+        metValue: 10.5
+    },
+
+    Football: {
+        intensities: {
+            "Competitive": 8,
+            "Light Effort": 4
+        }
+    },
+
+    Frisbee: {
+        intensities: {
+            "General": 3,
+            "Ultimate Frisbee": 8
+        },
+
+    },
+
+    FrisbeeGolf: {
+        intensities: null,
+        metValue: 3
+    },
+
+    Golf: {
+        intensities: null,
+        metValue: 4.06
+    },
+
+    Gymnastics: {
+        intensities: null,
+        metValue: 3.8
+    },
+
+    Handball: {
+        intensities: null,
+        metValue: 10
+    },
+
+    Hockey: {
+        intensities: {
+            'General': 8,
+            'Competitive': 10
+        },
+    },
+
+    HorsebackRiding: {
+        intensities: {
+            'General': 5.5,
+            "Trotting": 5.8,
+            "Walking": 3.8,
+            'Jumping': 9,
+            'Reining': 6
+        }
+    },
+
+    Taekwondo: {
+        intensities: null,
+        metValue: 14.3
+    },
+
+    Kendo: {
+        intensities: {
+            'kihon-keiko style, moderate intensity': 6.5,
+            'kirikaeshi style, high intensity': 9.6,
+            'kakari keiko style, very high intensity': 11.3
+        }
+    },
+
+    Judo: {
+        intensities: null,
+        metValue: 11.3
+    },
+
+    Kickboxing: {
+        intensities: null,
+        metValue: 7.3
+    },
+
+    Netball: {
+        intensities: null,
+        metValue: 7
+    },
+
+    Paddleball: {
+        intensities: {
+            'Casual': 6.0,
+            'Competitive': 10
+        }
+    },
+
+    RaceWalking: {
+        intensities: {
+            "3.1 m/s (6.9 mph)": 10.3,
+            "3.7 m/s (8.3 mph)": 13.8,
+            "4.0 m/s (8.95 mph)": 15.5
+        }
+    },
+
+    Racquetball: {
+        intensities: {
+            "General": 7.0,
+            "Competitive": 10
+        }
+    },
+
+    Climbing: {
+        intensities: {
+            'Rock or mountain climbing': 8,
+            'Rock climbing, free boulder': 8.8,
+            'Rock climbing, ascending rock, high difficulty': 7.3,
+            'Rock climbing, speed climbing, very difficult': 10.5,
+            'Rock climbing, ascending or traversing rock, low-to-moderate difficulty': 5.9,
+            'Rock climbing, treadwall, 7-10 m/min': 10.5,
+            'Rock climbing, rappelling': 5
+        }
+    },
+
+    RopeJumping: {
+        intensities: {
+            'fast pace, 120-160 skips/min': 12.3,
+            'moderate pace 100 - 120 skips/min': 11.8,
+            'slow pace, < 100 skips/min': 8.3
+        }
     }
+
+
+
 };
 
 // Calculate calories burned for a workout
