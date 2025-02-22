@@ -7,9 +7,8 @@ import Select from "react-select";
 const CalorieCal = () => {
     const [showPopup, setShowPopup] = useState(false);
     const [selection, setSelection] = useState(null);
-    const [workout, setWorkout] = useState("");
-    const [intensity, setIntensity] = useState("");
-    const [workoutTime, setWorkoutTime] = useState("");
+    const [activity, setActivity] = useState("");
+    const [activityTime, setActivityTime] = useState("");
     const [bodyWeight, setBodyWeight] = useState(70);
     const [caloriesBurned, setCaloriesBurned] = useState(0);
     const [meals, setMeals] = useState([]);
@@ -18,20 +17,12 @@ const CalorieCal = () => {
 
     // Get food data from the CSV file/database
     const foodData = CalFunctions.useFoodData();
-    if (!foodData) return null;
+    const activityData = CalFunctions.useActivityData();
+    if (!(foodData && activityData)) return null;
 
-    // Map food data to options for the select component
-    const foodOptions = foodData.slice(1).map(row => ({
-        value: `${row[1]}, ${row[3]} ${row[4]}`,
-        label: `${row[1]}, ${row[3]} ${row[4]}`,
-        cal: `${row[5]}`
-    }));
+    const foodOptions = foodData;
 
-    // Map workout data to options for the select component
-    const workoutOptions = Object.keys(CalFunctions.MET).map(exercise => ({
-        value: exercise,
-        label: exercise
-    }));
+    const activityOptions = activityData;
 
     // UI for the calorie calculator
     return (
@@ -49,12 +40,12 @@ const CalorieCal = () => {
             </label>
 
             <button onClick={() => CalFunctions.handleSelection("meal", setSelection, setShowPopup)}>Add Meal</button>
-            <button onClick={() => CalFunctions.handleSelection("workout", setSelection, setShowPopup)}>Add Workout</button>
+            <button onClick={() => CalFunctions.handleSelection("activity", setSelection, setShowPopup)}>Add Activity</button>
 
             {totalCalories > 0 && <p>Total Calorie Intake: {totalCalories.toFixed(2)} cal</p>}
             {caloriesBurned > 0 && <p>Total Calorie Burned: {caloriesBurned.toFixed(2)} cal</p>}
 
-            {/* Popup for adding meal or workout */}
+            {/* Popup for adding meal or activity */}
             {showPopup && (
                 <div className="popup-background">
                     <div className="popup-content">
@@ -91,44 +82,38 @@ const CalorieCal = () => {
                             </div>
                         )}
 
-                        {/* Popup for choosing workout */}
-                        {selection === "workout" && (
+                        {/* Popup for choosing activity */}
+                        {selection === "activity" && (
                             <div>
                                 <label>
-                                    Select Workout:
+                                    Select Activity:
                                     <Select
-                                        options={workoutOptions}
-                                        onChange={selectedOption => setWorkout(selectedOption ? selectedOption.value : "")}
-                                        value={workout ? { label: workout, value: workout } : null}
-                                        placeholder="Search for a workout"
+                                        options={activityOptions}
+                                        onChange={selectedOption => setActivity(selectedOption ? selectedOption.value : "")}
+                                        value={activity ? { label: activity, value: activity } : null}
+                                        placeholder="Search for a activity"
                                     />
                                 </label>
-
-                                {workout && CalFunctions.MET[workout].intensities && (
-                                    <Select
-                                        options={Object.keys(CalFunctions.MET[workout].intensities).map(
-                                            (intensity) => ({
-                                                value: intensity,
-                                                label: intensity
-                                            }))}
-                                        onChange={(selectedOption) => setIntensity(selectedOption ? selectedOption.value : "")}
-                                        value={intensity ? { label: intensity, value: intensity } : null}
-                                        placeholder="Select intensity"
-                                    />
-                                )}
 
                                 <br />
                                 <label>
                                     Time (in minutes):
                                     <input
                                         type="number"
-                                        value={workoutTime}
-                                        onChange={(e) => CalFunctions.handleWorkoutTimeChange(e, setWorkoutTime, workout, intensity, bodyWeight, setCaloriesBurned)}
+                                        value={activityTime}
+                                        onChange={(e) => CalFunctions.handleActivityTimeChange(
+                                            e,
+                                            setActivityTime,
+                                            activity,
+                                            activityOptions,
+                                            bodyWeight,
+                                            setCaloriesBurned
+                                        )}
                                         min="1"
                                     />
                                 </label>
 
-                                {workoutTime && workout && (intensity || workout != null) && (
+                                {activityTime && activity && (
                                     <p>Calories Burned: {caloriesBurned.toFixed(2)} cal</p>
                                 )}
                             </div>
@@ -144,7 +129,7 @@ const CalorieCal = () => {
                                 setShowPopup(false)
                             }
                             }>Submit</button>
-                            <button onClick={CalFunctions.closePopup.bind(null, setShowPopup, setWorkout, setIntensity)}>Cancel</button>
+                            <button onClick={CalFunctions.closePopup.bind(null, setShowPopup, setActivity)}>Cancel</button>
                         </div>
                     </div>
                 </div>
