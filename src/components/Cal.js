@@ -1,11 +1,3 @@
-// Ainsworth, B.E., Herrmann, S.D., Jacobs Jr., D.R., Whitt-Glover, M.C. and Tudor-Locke, C., 2024. A brief history of the Compendium of Physical Activities. Compendium of Physical Activities. Available at: https://pacompendium.com (Accessed: 21 January 2025).
-
-// Herrmann, S.D., Willis, E.A., Ainsworth, B.E., Barreira, T.V., Hastert, M., Kracht, C.L., Schuna Jr., J.M., Cai, Z., Quan, M., Tudor-Locke, C., Whitt-Glover, M.C. and Jacobs, D.R., 2024. 2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities. Compendium of Physical Activities. Available at: https://pacompendium.com (Accessed: 21 January 2025).
-
-// Willis, E.A., Herrmann, S.D., Hastert, M., Kracht, C.L., Barreira, T.V., Schuna Jr., J.M., Cai, Z., Quan, M., Conger, S.A., Brown, W.J., Ainsworth, B.E., 2024. Older Adult Compendium of Physical Activities: Energy costs of human activities in adults aged 60 and older. Compendium of Physical Activities. Available at: https://pacompendium.com (Accessed: 21 January 2025).
-
-// Conger, S.A., Herrmann, S.D., Willis, E.A., Nightingale, T.E., Sherman, J.R., Ainsworth, B.E., 2024. 2024 Wheelchair Compendium of Physical Activities: An update of activity codes and energy expenditure values. Compendium of Physical Activities. Available at: https://pacompendium.com (Accessed: 21 January 2025).
-
 import { useEffect, useState } from "react";
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
