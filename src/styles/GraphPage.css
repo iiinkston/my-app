@@ -1,0 +1,82 @@
+/* Graph Container */
+/* This styles the overall container that holds a graph */
+.chart-section {
+  display: flex;                    /* Uses flexbox layout for flexible positioning */
+  align-items: center;              /* Vertically center-aligns the children */
+  justify-content: space-between;   /* Distributes space evenly between children */
+  width: 100%;                      /* Occupies full available width */
+  max-width: 350px;                 /* Restricts the maximum width to 350px */
+  background-color: #d4edda;        /* Sets a light green background color */
+  border-radius: 10px;              /* Rounds the corners with a 10px radius */
+  padding: 10px;                    /* Adds internal spacing around the content */
+  margin: 10px auto;                /* Adds vertical margin and centers horizontally */
+}
+
+/* Chart Container */
+/* This container specifically holds the chart element within the graph section */
+.chart-container {
+  flex-grow: 1;                     /* Allows the container to expand and fill available space */
+  width: 80%;                       /* Sets the width to 80% of the parent container */
+  max-width: 300px;                 /* Limits the width to a maximum of 300px */
+  height: auto;                     /* Height adjusts automatically based on content */
+}
+
+/* Graph Add Button */
+/* Styles the button used to add new data or graphs */
+.graph-add-button {
+  display: block;                   /* Forces the button to behave as a block element */
+  margin: 20px auto;                /* Centers the button horizontally with 20px margin on top and bottom */
+  background-color: black;          /* Black background color */
+  color: white;                     /* White text color */
+  border: none;                     /* Removes any default border */
+  padding: 8px 12px;                /* Adds vertical and horizontal padding */
+  border-radius: 5px;               /* Rounds the button corners by 5px */
+  cursor: pointer;                  /* Changes the cursor to a pointer on hover */
+  font-size: 0.9rem;                /* Sets a slightly smaller font size */
+}
+
+/* Hover effect for Add Button */
+/* Changes the background color when the button is hovered over */
+.add-button:hover {
+  background-color: #333;           /* Darker shade when hovered */
+}
+
+/* Graph Modal */
+/* Styles the overlay modal that appears when editing or adding a graph */
+.graph-modal {
+  position: fixed;                  /* Fixed positioning to cover the entire viewport */
+  top: 0;                           /* Aligns the modal to the top of the viewport */
+  left: 0;                          /* Aligns the modal to the left of the viewport */
+  z-index: 9999;                    /* Ensures the modal appears above other elements */
+  width: 100%;                      /* Full width of the viewport */
+  height: 100%;                     /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background for dimming effect */
+}
+
+/* Graph Modal Content */
+/* Styles the content box inside the modal */
+.graph-modal-content {
+  background-color: #fff;           /* White background for the content area */
+  margin: 10% auto;                 /* Centers the box horizontally and adds a 10% top margin */
+  padding: 20px;                    /* Internal spacing for the content */
+  width: 300px;                     /* Fixed width of 300px */
+  border-radius: 8px;               /* Slightly rounded corners with an 8px radius */
+}
+
+/* Make the app flexible */
+/* Responsive styling for smaller screens */
+@media (max-width: 375px) {
+  .chart-section {
+    flex-direction: row;            /* Keeps items in a row on small screens */
+    justify-content: space-between; /* Ensures space is evenly distributed */
+  }
+
+  .chart-container {
+    width: 75%;                     /* Reduces width to 75% on small screens for better fit */
+  }
+
+  .input-button {
+    padding: 6px 10px;              /* Smaller padding for buttons */
+    font-size: 0.8rem;              /* Slightly smaller font size for compact layout */
+  }
+}

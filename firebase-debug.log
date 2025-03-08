@@ -1,0 +1,128 @@
+[debug] [2025-03-06T11:51:40.745Z] ----------------------------------------------------------------------
+[debug] [2025-03-06T11:51:40.750Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2025-03-06T11:51:40.750Z] CLI Version:   13.31.2
+[debug] [2025-03-06T11:51:40.751Z] Platform:      darwin
+[debug] [2025-03-06T11:51:40.751Z] Node Version:  v23.7.0
+[debug] [2025-03-06T11:51:40.751Z] Time:          Thu Mar 06 2025 19:51:40 GMT+0800 (China Standard Time)
+[debug] [2025-03-06T11:51:40.751Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-06T11:51:40.752Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-03-06T11:51:40.852Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-06T11:51:40.853Z] > authorizing via signed-in user (xumingwei948@gmail.com)
+[debug] [2025-03-06T11:51:40.853Z] [iam] checking project dietapp-ed5e5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-06T11:51:40.853Z] Checked if tokens are valid: false, expires at: 1740223291739
+[debug] [2025-03-06T11:51:40.853Z] Checked if tokens are valid: false, expires at: 1740223291739
+[debug] [2025-03-06T11:51:40.853Z] > refreshing access token with scopes: []
+[debug] [2025-03-06T11:51:40.853Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-06T11:51:40.853Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-06T11:52:56.774Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: 
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-03-06T11:52:56.776Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2025-03-06T11:52:57.636Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------591286700617899633604624","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: 
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-06T11:52:57.637Z] [iam] error while checking permissions, command may fail: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-06T11:52:57.638Z] Checked if tokens are valid: false, expires at: 1740223291739
+[debug] [2025-03-06T11:52:57.638Z] Checked if tokens are valid: false, expires at: 1740223291739
+[debug] [2025-03-06T11:52:57.638Z] > refreshing access token with scopes: []
+[debug] [2025-03-06T11:52:57.639Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-06T11:52:57.639Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-06T11:54:11.958Z] ----------------------------------------------------------------------
+[debug] [2025-03-06T11:54:11.960Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase login --reauth
+[debug] [2025-03-06T11:54:11.961Z] CLI Version:   13.31.2
+[debug] [2025-03-06T11:54:11.961Z] Platform:      darwin
+[debug] [2025-03-06T11:54:11.961Z] Node Version:  v23.7.0
+[debug] [2025-03-06T11:54:11.961Z] Time:          Thu Mar 06 2025 19:54:11 GMT+0800 (China Standard Time)
+[debug] [2025-03-06T11:54:11.961Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-06T11:54:11.962Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=709181810&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=xumingwei948%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-06T11:54:13.445Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-03-06T11:54:13.445Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-03-06T11:54:20.672Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-03-06T11:54:20.673Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-03-06T11:55:35.703Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------564195465938534679117123","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 93.46.8.90:443
+[debug] [2025-03-06T11:55:35.705Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-06T11:55:35.718Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-03-06T11:55:35.718Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"1f0cb245-d023-4554-804b-dbad8128c2e0"}
+[debug] [2025-03-06T11:55:40.673Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-03-06T11:55:40.674Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"VqRTIDnyph6cydC4PX5aPctVNd2auj9O1DWG9loDRnU"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    1F0CB
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=FE4uqJdE7rrvwrGy5_u8np0rOkjtL1qUhElDG5JyISc&session=1f0cb245-d023-4554-804b-dbad8128c2e0&attest=VqRTIDnyph6cydC4PX5aPctVNd2auj9O1DWG9loDRnU
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-03-06T11:55:55.637Z] ----------------------------------------------------------------------
+[debug] [2025-03-06T11:55:55.641Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase login --reauth
+[debug] [2025-03-06T11:55:55.641Z] CLI Version:   13.31.2
+[debug] [2025-03-06T11:55:55.641Z] Platform:      darwin
+[debug] [2025-03-06T11:55:55.641Z] Node Version:  v23.7.0
+[debug] [2025-03-06T11:55:55.641Z] Time:          Thu Mar 06 2025 19:55:55 GMT+0800 (China Standard Time)
+[debug] [2025-03-06T11:55:55.641Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=743606727&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=xumingwei948%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-06T11:56:05.903Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-03-06T11:56:05.903Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-03-06T11:57:20.932Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------420041958079053444855708","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 8.7.198.46:443
+[debug] [2025-03-06T11:57:20.935Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/opt/homebrew/lib/node_modules/firebase-tools/lib/apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-06T11:57:20.943Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-03-06T11:57:20.944Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"c866e317-892c-46e7-b963-6955dba92fb5"}
+[debug] [2025-03-06T11:57:23.528Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-03-06T11:57:23.529Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"PP6ylD5VTaUKUrYiT0FWhAhf6wA0r0Sq3ZRWQTd4yTk"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    C866E
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=Lvtm6C0XQK6j1UMRLcazisWpzWmNbM1awQFIXeS92m0&session=c866e317-892c-46e7-b963-6955dba92fb5&attest=PP6ylD5VTaUKUrYiT0FWhAhf6wA0r0Sq3ZRWQTd4yTk
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-03-06T11:57:59.300Z] ----------------------------------------------------------------------
+[debug] [2025-03-06T11:57:59.302Z] Command:       /opt/homebrew/Cellar/node/23.7.0/bin/node /opt/homebrew/bin/firebase login --reauth
+[debug] [2025-03-06T11:57:59.303Z] CLI Version:   13.31.2
+[debug] [2025-03-06T11:57:59.303Z] Platform:      darwin
+[debug] [2025-03-06T11:57:59.303Z] Node Version:  v23.7.0
+[debug] [2025-03-06T11:57:59.303Z] Time:          Thu Mar 06 2025 19:57:59 GMT+0800 (China Standard Time)
+[debug] [2025-03-06T11:57:59.303Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=997567228&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=xumingwei948%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-06T11:58:08.791Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-03-06T11:58:08.791Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]

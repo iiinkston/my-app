@@ -1,0 +1,28 @@
+/* Container for the Navbar Title */
+/* This container spans the full width, adds vertical padding, and applies a subtle box shadow */
+.navbar-title-container {
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;  /* Allows absolutely positioned children (like the add button) to be positioned relative to this container */
+}
+
+/* Content wrapper for the Navbar Title */
+/* Centers the title horizontally and vertically within the container */
+.navbar-title-content {
+  display: flex;
+  justify-content: center;  /* Horizontally centers child elements */
+  align-items: center;      /* Vertically centers child elements */
+  position: relative;       /* Ensures that any absolutely positioned elements inside are relative to this container */
+}
+
+/* Navbar Title Styling */
+/* Defines the font size, color, weight, and removes default margins for the title */
+.navbar-title {
+  font-size: 1.8rem;
+  color: #0d6efd;        /* Blue color for the title */
+  font-weight: bold;
+  margin: 0;             /* Removes any default margin */
+}
+
+

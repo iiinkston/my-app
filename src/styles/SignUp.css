@@ -1,0 +1,134 @@
+/* Sign-Up Page Styles */
+
+/* Container for the entire Sign-Up page */
+/* Centers content both vertically and horizontally, fills the viewport, 
+   and applies a unique gradient background */
+   .signup-container {
+    display: flex;                         /* Use flexbox for layout */
+    justify-content: center;               /* Center horizontally */
+    align-items: center;                   /* Center vertically */
+    height: 100vh;                         /* Full viewport height */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Unique gradient for Sign Up */
+    padding: 20px;                         /* Padding around the container */
+}
+  
+/* Sign-Up Card */
+/* The card that holds the sign-up form with white background, rounded corners, and a drop shadow */
+.signup-card {
+    background: #ffffff;                   /* White background */
+    padding: 40px;                         /* Internal spacing */
+    border-radius: 15px;                   /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+    width: 100%;                           /* Full width of its container */
+    max-width: 400px;                      /* Maximum width for responsiveness */
+    text-align: center;                    /* Center text inside the card */
+    transition: transform 0.3s ease-in-out;  /* Smooth transition for hover effect */
+}
+  
+/* Hover effect for the Sign-Up Card */
+/* Slight upward movement on hover for a subtle interactive feel */
+.signup-card:hover {
+    transform: translateY(-5px);           /* Moves card upward by 5px */
+}
+  
+/* Sign-Up Header */
+/* Styling for the main header text of the Sign-Up form */
+.signup-header {
+    font-size: 1.8rem;                     /* Large font size for prominence */
+    color: #333;                           /* Dark gray color */
+    margin-bottom: 5px;                    /* Small bottom margin */
+}
+  
+/* Subtext below the header */
+/* Provides additional instruction or context with a smaller font and lighter color */
+.signup-subtext {
+    font-size: 0.9rem;                     /* Smaller font size */
+    color: #666;                           /* Lighter gray color */
+    margin-bottom: 20px;                   /* More space below the subtext */
+}
+  
+/* Form Styling */
+/* The sign-up form uses a vertical layout for its elements */
+.signup-form {
+    display: flex;                         /* Use flexbox layout */
+    flex-direction: column;                /* Stack form elements vertically */
+}
+  
+/* Input Fields */
+/* Styles for the input fields (for name, email, password) */
+.signup-input {
+    width: 100%;                           /* Full width of the container */
+    padding: 12px;                         /* Adequate internal padding */
+    margin-bottom: 15px;                   /* Space below each input */
+    border: 1px solid #ccc;                /* Light gray border */
+    border-radius: 8px;                    /* Slightly rounded corners */
+    font-size: 1rem;                       /* Standard font size */
+    transition: all 0.3s ease-in-out;       /* Smooth transition for interactive states */
+}
+  
+/* Input Field Focus */
+/* Enhances input field appearance when it receives focus */
+.signup-input:focus {
+    border-color: #ff6b81;                 /* Change border color to a pink shade */
+    outline: none;                         /* Remove default outline */
+    box-shadow: 0px 0px 10px rgba(255, 107, 129, 0.5); /* Add glow effect */
+}
+  
+/* Sign Up Button */
+/* Styles the main submit button for the sign-up form */
+.signup-button {
+    width: 100%;                           /* Button spans full container width */
+    padding: 12px;                         /* Padding for comfortable clicking */
+    background: #ff6b81;                   /* Pink background color */
+    color: white;                          /* White text for contrast */
+    border: none;                          /* No border */
+    border-radius: 8px;                    /* Rounded corners */
+    font-size: 1.2rem;                     /* Larger font size for visibility */
+    cursor: pointer;                       /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out;       /* Smooth transition for hover state */
+}
+  
+/* Hover effect for the Sign Up Button */
+/* Changes background color on hover for visual feedback */
+.signup-button:hover {
+    background: #e55057;                   /* Darker pink when hovered */
+}
+  
+/* Error Message */
+/* Styles for error messages displayed on the Sign-Up page */
+.signup-error {
+    color: red;                            /* Red text to indicate an error */
+    font-size: 0.9rem;                     /* Standard font size */
+    margin-top: 10px;                      /* Space above the error message */
+}
+  
+/* App Title */
+/* Styling for the application title on the Sign-Up page */
+.app-title {
+    font-size: 2.5rem;                     /* Very large font size */
+    font-weight: bold;                     /* Bold text */
+    color: #007bff;                        /* Blue color */
+    margin-bottom: 10px;                   /* Space below the title */
+}
+  
+/* Back Button */
+/* Styles for the button that navigates back to the Sign-In page */
+.signup-back-button {
+    width: 100%;                           /* Full width button */
+    padding: 10px;                         /* Padding for a clickable area */
+    background: transparent;               /* Transparent background */
+    border: 2px solid #ff6b81;              /* Pink border */
+    color: #ff6b81;                        /* Pink text */
+    border-radius: 8px;                    /* Rounded corners */
+    font-size: 1rem;                       /* Standard font size */
+    margin-top: 15px;                      /* Space above the button */
+    cursor: pointer;                       /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out;       /* Smooth transition for hover effect */
+}
+  
+/* Hover effect for the Back Button */
+/* Changes background and text color on hover */
+.signup-back-button:hover {
+    background: #ff6b81;                   /* Solid pink background on hover */
+    color: white;                          /* White text when hovered */
+}

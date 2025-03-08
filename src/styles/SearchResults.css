@@ -1,0 +1,63 @@
+/* SearchResults.css */
+
+/* Container Styling */
+.search-results-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Heading Styling */
+.search-results-container h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Spinner Styling */
+.search-results-container .spinner-border {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Search Result Item Styling */
+.search-result-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on result items */
+.search-result-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Title Link Styling */
+.search-result-item a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.search-result-item a:hover {
+    text-decoration: underline;
+}
+
+/* Snippet Styling */
+.search-result-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* No results message */
+.search-results-container p {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+}

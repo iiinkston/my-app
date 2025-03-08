@@ -1,0 +1,39 @@
+/* Home Page Content Layout */
+.content {
+  display: flex;                     /* Uses flexbox layout for easy alignment */
+  flex-direction: column;            /* Arranges child elements in a vertical column */
+  align-items: center;               /* Horizontally centers all elements */
+  justify-content: center;           /* Vertically centers all elements */
+  width: 100%;                       /* Occupies full available width */
+  max-width: 400px;                  /* Limits width to 400px to suit mobile screens */
+  margin: 10px auto;                 /* Centers the container with 10px vertical margins */
+  padding-bottom: 50px;              /* Adds padding at the bottom to prevent overlapping with the footer */
+}
+
+/* Section Layout for Elements like Step Count and Cal Spent */
+.chart-section {
+  width: 100%;                       /* Ensures the section takes up the full width */
+  max-width: 350px;                  /* Limits the width to 350px for mobile optimization */
+  background-color: #d4edda;         /* Applies a light green background color */
+  border-radius: 10px;               /* Rounds the corners of the section */
+  padding: 10px;                     /* Adds inner spacing */
+  text-align: center;                /* Centers text within the section */
+  display: flex;                     /* Uses flexbox for internal layout */
+  flex-direction: column;            /* Stacks child elements vertically */
+  align-items: center;               /* Centers child elements horizontally */
+  justify-content: center;           /* Centers child elements vertically */
+}
+
+/* Chart Container Styles */
+.chart-container {
+  width: 100%;                       /* Takes the full width of its parent */
+  max-width: 330px;                  /* Caps the width at 330px for optimal display */
+  height: auto;                      /* Adjusts height automatically based on content */
+}
+
+/* Flexible Design for Small Screens */
+@media (max-width: 375px) {
+  .content {
+    width: 100%;                     /* Ensures the content container occupies full width on small screens */
+  }
+}

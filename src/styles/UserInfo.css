@@ -1,0 +1,73 @@
+/* General styling for the user info section */
+.macro-section {
+  max-width: 90%;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .macro-section {
+    width: 95%;
+  }
+}
+
+/* Profile header (aligns profile picture and title) */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Profile picture (now top-left and clickable) */
+.profile-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+/* Title "Today's Macros" (centered) */
+.macro-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Macro list container */
+.macro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual macro item */
+.macro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Progress bar container */
+.progress-bar {
+  width: 100%;
+  height: 14px;
+  /* Increased height */
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+/* Inner progress bar */
+.progress {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}

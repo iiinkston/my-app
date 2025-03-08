@@ -1,0 +1,32 @@
+/* Bottom Navigation Styles */
+.bottom-nav {
+  display: flex;              /* Use Flexbox layout for navigation items */
+  flex-direction: row;        /* Arrange items in a horizontal row */
+  justify-content: space-around;  /* Distribute items evenly with equal spacing */
+  width: 100%;                /* Make the navigation take full width */
+}
+
+/* Navigation Link Styles */
+.bottom-nav-link {
+  flex: 1;                    /* Each link takes up equal space */
+  text-decoration: none;      /* Remove underline from links */
+  color: black;               /* Set text color to black */
+  display: flex;              /* Use Flexbox for inner layout */
+  flex-direction: column;     /* Stack elements vertically inside the link */
+  align-items: center;        /* Center the content horizontally */
+  padding: 10px;              /* Add padding around each link */
+}
+
+/* Active Link Styling */
+.bottom-nav-link.active {
+  color: #007bff;             /* Change text color to blue when active */
+  font-weight: bold;          /* Make the active link text bold */
+}
+
+/* Bottom Navigation Wrapper */
+.bottom-nav-wrapper {
+  bottom: 0;                  /* Position at the bottom of the viewport */
+  width: 100%;                /* Span the full width of the viewport */
+  left: 0;                    /* Align to the left edge */
+  z-index: 999;               /* Ensure it appears on top of other elements */
+}

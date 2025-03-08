@@ -1,0 +1,117 @@
+/* Sign-In Page Styles */
+
+/* Container for the Sign-In page, centers content both vertically and horizontally */
+.signin-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Make the container fill the full viewport height */
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Modern gradient background */
+    padding: 20px; /* Add padding around the container */
+  }
+    
+  /* Card that contains the sign-in form */
+  .signin-card {
+    background: #ffffff; /* White background for the card */
+    padding: 40px; /* Internal spacing inside the card */
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+    width: 100%; /* Take full width of its container */
+    max-width: 400px; /* Limit the width to 400px for responsiveness */
+    text-align: center; /* Center the text within the card */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+    
+  /* Hover effect for the sign-in card */
+  .signin-card:hover {
+    transform: translateY(-5px); /* Moves the card slightly upward when hovered */
+  }
+    
+  /* Header text for the sign-in form */
+  .signin-header {
+    font-size: 1.8rem; /* Large font size for emphasis */
+    color: #333; /* Dark gray color for contrast */
+    margin-bottom: 5px; /* Small space below the header */
+  }
+    
+  /* Subtext below the header */
+  .signin-subtext {
+    font-size: 0.9rem; /* Smaller font size for subtext */
+    color: #666; /* Lighter gray for a subtle appearance */
+    margin-bottom: 20px; /* Space below the subtext */
+  }
+    
+  /* Form layout for the sign-in inputs */
+  .signin-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+  }
+    
+  /* Styling for the input fields in the sign-in form */
+  .signin-input {
+    width: 100%; /* Input takes the full width of its container */
+    padding: 12px; /* Padding inside the input for comfort */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    transition: all 0.3s ease-in-out; /* Smooth transition for focus effects */
+  }
+    
+  /* Focus effect for the input fields */
+  .signin-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5); /* Blue glow effect */
+  }
+    
+  /* Styling for the sign-in button */
+  .signin-button {
+    width: 100%; /* Button spans the full width of its container */
+    padding: 12px; /* Padding for a comfortable click area */
+    background: #007bff; /* Blue background */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem; /* Slightly larger font for prominence */
+    cursor: pointer; /* Pointer cursor indicates clickable element */
+    transition: all 0.3s ease-in-out; /* Smooth hover transitions */
+  }
+    
+  /* Hover effect for the sign-in button */
+  .signin-button:hover {
+    background: #0056b3; /* Darker blue when hovered */
+  }
+    
+  /* Styling for error messages on the sign-in page */
+  .signin-error {
+    color: red; /* Red text to indicate errors */
+    font-size: 0.9rem; /* Standard font size */
+    margin-top: 10px; /* Space above the error message */
+  }
+    
+  /* Styling for the link to the sign-up page */
+  .signin-link {
+    margin-top: 15px; /* Space above the link */
+    font-size: 0.9rem; /* Standard font size for link text */
+  }
+    
+  /* Styling for the anchor tag inside the sign-in link */
+  .signin-link a {
+    color: #007bff; /* Blue color for links */
+    font-weight: bold; /* Bold text for emphasis */
+    text-decoration: none; /* Remove underline from the link */
+  }
+    
+  /* Hover effect for the sign-in link */
+  .signin-link a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
+  /* App Title styling */
+  .app-title {
+    font-size: 2.5rem; /* Very large font size for the app title */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Blue color for the title */
+    margin-bottom: 10px; /* Space below the title */
+  }

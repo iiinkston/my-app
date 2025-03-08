@@ -1,0 +1,89 @@
+/* General Container Styling */
+/* Adds a top margin and extra bottom padding to avoid overlapping with the footer */
+.profile-container {
+  margin-top: 1rem;
+  /* Top margin */
+  padding-bottom: 120px;
+  /* Extra bottom padding to avoid footer overlap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styling */
+/* Adds a subtle shadow for a lifted appearance */
+.profile-card {
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+  border-radius: 12px;
+  /* Smooth rounded corners */
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Profile Image */
+/* Styles the profile image to be circular and use the userpic.jpeg as the default */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* Ensures the image covers the area without distortion */
+  border-radius: 50%;
+  /* Makes the image circular */
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+  /* Light border around the image */
+  background-image: url("/public/userpic.jpeg");
+  /* Default image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Form Input Group */
+/* Adds spacing between form elements */
+.profile-form-group {
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+/* Makes the button full width with proper spacing */
+.profile-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.profile-btn:hover {
+  opacity: 0.8;
+}
+
+/* File Upload Styling */
+.profile-form-group input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Name Input Field */
+.profile-form-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Back Button */
+.profile-btn-back {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.profile-btn-back:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,246 @@
+.calorie-container {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+
+.calorie-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.add-meal-btn,
+.add-activity-btn {
+  background-color: #ff7c7c;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-meal-btn:hover,
+.add-activity-btn:hover {
+  background-color: #f3b1ac;
+}
+
+.total-calories,
+.calories-burned {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-title {
+  color: #000000;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #dc3545;
+  /* Red color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+  /* Darker red */
+  transform: scale(1.05);
+  /* Slight scale effect */
+}
+
+.remove-btn:active {
+  transform: scale(0.95);
+  /* Click effect */
+}
+
+/* Ensure buttons in meal list are spaced properly */
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.meal-item .remove-btn {
+  margin-left: 15px;
+}
+
+/* Add Meal Button */
+.add-meal-btn {
+  background-color: #28a745;
+  /* Green color */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+  /* Space above */
+  margin-bottom: 15px;
+  /* Space below */
+}
+
+.add-meal-btn:hover {
+  background-color: #218838;
+  /* Darker green */
+}
+
+/* Activity Selection Popup */
+.popup-section {
+  padding: 15px;
+  border-radius: 5px;
+  background: #f8f9fa;
+  /* Light gray background */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Light shadow */
+}
+
+/* Activity Dropdown */
+.activity-select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+.popup-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Box for Activity Time */
+.popup-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background: white;
+}
+
+.popup-input:focus {
+  border-color: #0056b3;
+}
+
+/* Calories Burned Display */
+.calories-burned {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Submit and Cancel Buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 48%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 48%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}

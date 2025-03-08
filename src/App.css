@@ -1,0 +1,51 @@
+/* Global body styles */
+/* Removes default margin, sets font family and background, and centers content both vertically and horizontally */
+body {
+  margin: 0;                              /* Remove default margin */
+  font-family: Arial, sans-serif;         /* Set font family */
+  background-color: #f9f9f9;                /* Light gray background color */
+  display: flex;                          /* Use flexbox for layout */
+  justify-content: center;                /* Center content horizontally */
+  align-items: center;                    /* Center content vertically */
+  height: 100vh;                          /* Full viewport height */
+  overflow: hidden;                       /* Prevent scrolling */
+}
+
+/* Main application container styles */
+/* Centers text, limits width for mobile, and adds padding, background, shadow, and rounded corners */
+.app-container {
+  text-align: center;                     /* Center-align text */
+  width: 375px;                           /* Default mobile width */
+  max-width: 100%;                        /* Ensure container does not exceed viewport width */
+  height: 100vh;                          /* Full viewport height */
+  padding: 20px;                          /* Internal padding */
+  background: #fff;                       /* White background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  border-radius: 10px;                    /* Rounded corners */
+  display: flex;                          /* Use flexbox layout */
+  flex-direction: column;                 /* Arrange children in a column */
+  justify-content: space-between;         /* Distribute space between children */
+  overflow: hidden;                       /* Hide overflowing content */
+}
+
+/* Responsive styling for smaller screens */
+/* On screens with a max-width of 375px, make the app container span full width */
+@media (max-width: 375px) {
+  .app-container {
+    width: 100%;                          /* Use full width on small screens */
+  }
+}
+
+/* Container for the main content */
+/* Allows content to grow and scroll vertically while reserving space for the footer */
+.content-container {
+  flex-grow: 1;                           /* Allow container to expand and fill available space */
+  overflow-y: auto;                       /* Enable vertical scrolling if needed */
+  padding-bottom: 50px;                   /* Ensure space at the bottom for the footer */
+}
+
+/* Additional general container styles */
+/* Adds a top margin for elements with the .container-auth class */
+.container-auth {
+  margin-top: 1rem;                       /* Top margin of 1rem */
+}

@@ -1,0 +1,40 @@
+/* Settings Container */
+/* Limits the container width to 500px and centers it horizontally */
+.settings-container {
+  max-width: 500px;
+  margin: auto;
+}
+  
+/* Section Titles */
+/* Styles section headers with a smaller, bold, uppercase font and muted color */
+.section-title {
+  font-size: 1rem;              /* Sets the font size to 1rem */
+  font-weight: bold;            /* Makes the text bold */
+  color: #6c757d;               /* Uses a muted gray color */
+  text-transform: uppercase;    /* Transforms text to uppercase */
+  margin: 20px 0 10px;          /* Adds top, bottom, and side margins */
+}
+  
+/* Setting Items */
+/* Styles individual setting items with padding, rounded corners, and a shadow */
+.setting-item {
+  padding: 12px;                /* Adds padding inside the item */
+  border-radius: 10px;          /* Rounds the corners by 10px */
+  background: var(--card-bg);   /* Sets background color using a CSS variable */
+  box-shadow: 0 2px 8px var(--card-shadow); /* Applies a subtle shadow using a CSS variable */
+  margin-bottom: 10px;          /* Adds space below each setting item */
+}
+  
+/* Hover effect for setting items */
+/* Maintains the same background on hover (could be adjusted if needed) */
+.setting-item:hover {
+  background: var(--card-bg);
+}
+
+/* Buttons - Adapt to Dark Mode */
+/* This commented-out block shows a transition effect for button background and text color */
+/*
+button {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+*/
